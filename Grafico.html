@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Gráficos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="control-panel">
+            <fieldset>
+                <legend>Selecciona una gráfica</legend>
+                <label><input type="radio" name="chartType" value="sistema-operativo">Sistema Operativo</label>
+                <label><input type="radio" name="chartType" value="navegador">Navegador</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Color de los gráficos</legend>
+                <label><input type="radio" name="chartColor" value="red">Rojo</label>
+                <label><input type="radio" name="chartColor" value="green">Verde</label>
+                <label><input type="radio" name="chartColor" value="blue">Azul</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Orientación de las barras</legend>
+                <label><input type="radio" name="chartOrientation" value="horizontal">Horizontal</label>
+                <label><input type="radio" name="chartOrientation" value="vertical">Vertical</label>
+            </fieldset>
+            
+            <button id="generateChartButton">Generar Gráfico</button>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="chart2006"></canvas>
+            <canvas id="chart2007"></canvas>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
+
